@@ -66,7 +66,7 @@
                     <label for="" class="label pt-2">
                         Giá
                     </label><br />
-                    <input type="number" name="price" id="" value="" placeholder="Nhập số lượng " required
+                    <input type="number" name="price" id="" value="" placeholder="Nhập giá" required
                         class="input w-75 rounded-2"><br />
 
                     <label for="" class="label pt-2">
