@@ -47,19 +47,14 @@ if (isset($sanpham)) {
                     <label for="" class="label pt-2">
                         Ảnh
                     </label><br />
-                    <input type="hidden" value="<?= htmlspecialchars($image) ?>" name="img" width="80px">
+                    <input type="hidden" value="<?= $image ?>" name="img" width="80px">
                     <input type="file" name="image[]" multiple accept="image/*" width="80px" height="50px"
                         class="input w-75 rounded-2 fileImage"><br />
-<?php
-                $images = explode(',', $image);
-                if (!empty($images[0])) {
-                    foreach ($images as $key => $value):
-                ?>
+                    <?php
+                    $images = explode(',', $image);
+                    foreach ($images as $key => $value): ?>
                         <img src="../image/<?= $value ?>" width="80px" height="80px" alt="">
-                <?php
-                    endforeach;
-                }
-                ?>
+                    <?php endforeach; ?>
                     <div class="list-img ">
 
                     </div>
@@ -81,7 +76,7 @@ if (isset($sanpham)) {
                     <label for="" class="label pt-2">
                         Giá
                     </label><br />
-                    <input type="number" name="price" id="" value="<?= $price ?>" placeholder="Nhập số lượng "
+                    <input type="number" name="price" id="" value="<?= $price ?>" placeholder="Nhập giá "
                         class="input w-75 rounded-2"><br />
 
 
@@ -92,7 +87,7 @@ if (isset($sanpham)) {
                     <textarea name="description" id="" cols="30" rows="10"><?= $description ?></textarea><br />
 
                     <label for="" class="label pt-2">
-                        Biến Thể
+                        
                     </label><br />
                     <?php foreach ($load_all_pro_detail as $key => $value):
                         # code...

@@ -74,57 +74,7 @@
                     </label><br />
                     <textarea name="description" id="" cols="105" rows="5" class="rounded-2" required></textarea><br />
 
-                    <!-- biến thể  -->
-                    <label for="" class="label pt-2">
-                        Biến Thể
-                    </label><br />
-                    <div class="variant d-flex pb-2">
-                        <label for="size1" class="label px-3">
-                            Size
-                        </label><br />
-                        <input type="text" name="size[]" id="size1" value="S" class=" rounded-2 px-3"><br />
-                        <label for="quantity1" class="label px-3">
-                            Số Lượng
-                        </label><br />
-                        <input type="number" name="quantity[]" id="quantity1" value="" placeholder="Nhập số lượng "
-                            class=" rounded-2 "><br />
-                    </div>
-
-                    <div class="variant d-flex pb-2">
-                        <label for="size2" class="label px-3">
-                            Size
-                        </label><br />
-                        <input type="text" name="size[]" id="size2" value="M" class=" rounded-2 px-3"><br />
-                        <label for="quantity2" class="label px-3">
-                            Số Lượng
-                        </label><br />
-                        <input type="number" name="quantity[]" id="quantity2" value="" placeholder="Nhập số lượng "
-                            class=" rounded-2 "><br />
-                    </div>
-
-                    <div class="variant d-flex pb-2">
-                        <label for="size3" class="label px-3">
-                            Size
-                        </label><br />
-                        <input type="text" name="size[]" id="size3" value="L" class=" rounded-2 px-3"><br />
-                        <label for="quantity3" class="label px-3">
-                            Số Lượng
-                        </label><br />
-                        <input type="number" name="quantity[]" id="quantity3" value="" placeholder="Nhập số lượng "
-                            class=" rounded-2 "><br />
-                    </div>
-
-                    <div class="variant d-flex pb-2">
-                        <label for="size4" class="label px-3">
-                            Size
-                        </label><br />
-                        <input type="text" name="size[]" id="size4" value="XL " class=" rounded-2 px-3"><br />
-                        <label for="quantity4" class="label px-3">
-                            Số Lượng
-                        </label><br />
-                        <input type="number" name="quantity[]" id="quantity4" value="" placeholder="Nhập số lượng "
-                            class=" rounded-2 "><br />
-                    </div>
+                    
 
 
 

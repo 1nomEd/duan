@@ -1,6 +1,6 @@
 <?php
 // include_once "connect.php";
-function insert_sanpham($product_name, $image, $price, $description, $category_id, $size, $quantity) {
+function insert_sanpham($product_name, $image, $price, $description, $category_id) {
 
     // Thêm sản phẩm vào bảng products
     $sqlProduct = "INSERT INTO product (product_name, image, price, description, category_id) VALUES (?, ?, ?, ?, ?)";
@@ -9,15 +9,12 @@ function insert_sanpham($product_name, $image, $price, $description, $category_i
     // Thêm biến thể cho mỗi size vào bảng product_variants
     $sqlVariant = "INSERT INTO product_detail (product_id, size, quantity) VALUES (?, ?, ?)";
 
-    foreach($size as $index => $sizes) {
-
-        pdo_execute_return_lastInsertID($sqlVariant, $productId, $size[$index], $quantity[$index]);
-    }
+    
 
 
 }
 
-function loadall_sanpham($search = "", $category_id = 0, $start = 0, $limit = 0) {
+function loadall_sanpham($search = "", $category_id = 0, $start, $limit = 0) {
     $sql = "SELECT product.*, categories.category_name 
             FROM product 
             LEFT JOIN categories ON product.category_id = categories.category_id 
@@ -79,7 +76,7 @@ function loadone_sanpham($product_id) {
 }
 
 function loadall_sanpham_home() {
-    $sql = "select * from product order by product_id desc limit 0,11";
+    $sql = "select * from product order by product_id desc limit 0,8";
     return pdo_query($sql);
 }
 
@@ -90,39 +87,22 @@ function select_sp_cungloai($product_id, $category_id) {
 }
 
 
-function update_sanpham($product_id, $product_name, $image, $price, $description, $category_id, $size, $quantity) {
+function update_sanpham($product_id, $product_name, $image, $price, $description, $category_id) {
     // Cập nhật thông tin chung của sản phẩm trong bảng products
     $sqlProduct = "UPDATE product 
                     SET product_name = ?, 
+                        image = ?, 
                         price = ?, 
                         description = ?, 
                         category_id = ? 
                     WHERE product_id = ?";
 
-    pdo_execute($sqlProduct, $product_name, $price, $description, $category_id, $product_id);
-
-    // Kiểm tra xem có thay đổi ảnh hay không
-    if (!empty($image)) {
-        // Nếu có thay đổi ảnh, cập nhật ảnh mới trong bảng product
-        $sqlUpdateImage = "UPDATE product SET image = ? WHERE product_id = ?";
-        pdo_execute($sqlUpdateImage, $image, $product_id);
-    } else {
-        // Nếu không có thay đổi ảnh, giữ nguyên ảnh cũ
-        $sqlSelectImage = "SELECT image FROM product WHERE product_id = ?";
-        $oldImage = pdo_query_one($sqlSelectImage, $product_id);
-        $image = $oldImage['image'];
-    }
+    pdo_execute($sqlProduct, $product_name, $image, $price, $description, $category_id, $product_id);
 
     // Xóa các biến thể hiện tại của sản phẩm trong bảng product_detail
     $sqlDeleteVariants = "DELETE FROM product_detail WHERE product_id = ?";
     pdo_execute($sqlDeleteVariants, $product_id);
-
-    // Thêm lại biến thể mới cho mỗi size vào bảng product_detail
-    $sqlInsertVariant = "INSERT INTO product_detail (product_id, size, quantity) VALUES (?, ?, ?)";
-
-    foreach($size as $index => $sizes) {
-        pdo_execute($sqlInsertVariant, $product_id, $size[$index], $quantity[$index]);
-    }
+ 
 }
 
 

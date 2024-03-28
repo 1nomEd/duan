@@ -114,10 +114,9 @@ if (isset($_GET['act'])) {
                 $price = $_POST['price'];
                 $description = $_POST['description'];
                 $category_id = $_POST['category_id'];
-                $size = $_POST['size'];
-                $quantity = $_POST['quantity'];
+                
 
-                insert_sanpham($product_name, uploadImages(), $price, $description, $category_id, $size, $quantity);
+                insert_sanpham($product_name, uploadImages(), $price, $description, $category_id);
 
             }
 
@@ -155,8 +154,7 @@ if (isset($_GET['act'])) {
                 $price = $_POST['price'];
                 $product_name = $_POST['product_name'];
                 $description = $_POST['description'];
-                $size = $_POST['size'];
-                $quantity = $_POST['quantity'];
+                
 
                 if (isset($_FILES['image']['name']))
 
@@ -166,7 +164,7 @@ if (isset($_GET['act'])) {
                         $imgUpdate = array_merge($_FILES['image']['name'], explode(',', $_POST['img']));
                         $imgUpdate = implode(',', $imgUpdate);
                     }
-                update_sanpham($product_id, $product_name, $imgUpdate, $price, $description, $category_id, $size, $quantity);
+                update_sanpham($product_id, $product_name, $imgUpdate, $price, $description, $category_id);
                 $Notification = "Sửa thành công";
             }
             $limit = 5;

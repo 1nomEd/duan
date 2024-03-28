@@ -45,7 +45,7 @@
                         <div class="prod_options">
                             <div class="card-body mb-4">
                                 <div class="row justify-content-between">
-                                    <div class="col-lg-6">
+                                    <div class="col-lg-11">
                                         <p>
                                             <?= $description ?>
                                         </p>
@@ -55,38 +55,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="row">
-                                <label class="col-xl-5 col-lg-5 col-md-6 col-6"><strong>Size</strong></label>
-                                <?php foreach ($loadall_pro_detail as $index => $value): ?>
-                                    <?php
-                                    extract($value);
-                                    $isOutOfStock = ($quantity == 0);
-                                    ?>
-                                    <div class="col-xl-4 col-lg-5 col-md-6 col-6 w-8 size_border">
-                                        <div class="custom-select-form div_size">
-                                            <label for="size<?= $size ?>"
-                                                class="sizeLabel <?= $isOutOfStock ? 'outOfStock' : '' ?>" <?= $isOutOfStock ? 'title="Hết hàng"' : '' ?>>
-                                                <?= $size ?>
-                                                <input type="radio" name="selected_size" value="<?= $size ?>"
-                                                    id="size<?= $size ?>" class="checked" <?= $isOutOfStock ? 'disabled' : '' ?> onclick="showQuantity(<?= $quantity ?>)">
-                                            </label>
-                                        </div>
-                                    </div>
-
-                                <?php endforeach; ?>
-                            </div>
-                            <div id="quantityDisplay">Số lượng còn trong kho: </div>
-                          
-                            <div class="row">
-                                <label class="col-xl-5 col-lg-5  col-md-6 col-6"><strong>Số lượng </strong></label>
-                                <div class="col-xl-4 col-lg-5 col-md-6 col-6">
-                                    <div class="numbers-row">
-                                        <input type="number" value="1" id="quantity_1" class="qty2"
-                                            onclick="validateAndSubmit()" name="selected_quantity" min="1"
-                                            max="<?= $quantity ?>">
-                                    </div>
-                                </div>
-                            </div>
+                            
                           
                         </div>
                         <div class="row d-flex">
