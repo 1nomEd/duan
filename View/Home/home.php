@@ -117,9 +117,9 @@
 							
 							<figure>
 								<a href="index.php?act=chitietsp&idct_sp=<?= $product_id ?>">
-									<img class="img-fluid lazy " src="image/<?= explode(',', $image)[0] ?>"
+									<img class="img-fluid" width="250px" height="250px" src="image/<?= explode(',', $image)[0] ?>"
 										data-src="image/<?= explode(',', $image)[0] ?>" alt="">
-									<img class="img-fluid lazy" src="image/<?= explode(',', $image)[0] ?>"
+									<img class="img-fluid" src="image/<?= explode(',', $image)[0] ?>"
 										data-src="image/<?= explode(',', $image)[0] ?>" alt="">
 								</a>
 							</figure>
@@ -177,7 +177,7 @@
 						<div class="grid_item">
 							<figure>
 								<a href="index.php?act=chitietsp&idct_sp=<?= $product_id ?>">
-									<img class="owl-lazy lazy" src="image/<?= explode(',', $image)[0] ?>"
+									<img class="img-fluid" src="image/<?= explode(',', $image)[0] ?>"
 										data-src="image/<?= explode(',', $image)[0] ?>" alt="">
 								</a>
 							</figure>
@@ -216,5 +216,5 @@
 
 		</div>
 	</div>
-	<!-- hết sp đặc sắc  -->
+	
 </main>

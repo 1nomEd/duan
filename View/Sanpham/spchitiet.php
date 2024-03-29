@@ -4,6 +4,11 @@
     extract($chitietsp);
     $images = explode(',', $image);
     ?>
+    <style>
+    .gray-bg {
+        background-color: #f2f2f2; /* Màu xám trắng */
+    }
+</style>
     <div class="container margin_30">
         <form action="index.php?act=addtocart" method="post">
             <div class="row">
@@ -46,8 +51,8 @@
                             <div class="card-body mb-4">
                                 <div class="row justify-content-between">
                                     <div class="col-lg-11">
-                                        <p>
-                                            <?= $description ?>
+                                        <p class="gray-bg">
+                                            <?= nl2br($description) ?>
                                         </p>
                                     </div>
                                     <div class="col-lg-5">
