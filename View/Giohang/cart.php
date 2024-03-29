@@ -29,9 +29,6 @@
 							Giá
 						</th>
 						<th>
-							Size
-						</th>
-						<th>
 							Số lượng
 						</th>
 						<th>
