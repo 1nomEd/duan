@@ -118,7 +118,7 @@
 						<td colspan="6">
 							<a href="index.php?act=deleteCart">Xóa Giỏ Hàng</a>
 						</td>
-						<td> <input type="submit" name="capnhatcart" id="" value="Cập Nhật" class="btn_1"></td>
+						
 					</tr>
 				</tbody>
 			</form>
@@ -135,7 +135,7 @@
 							<span>Tổng Tiền</span>
 							<?= number_format($tong, 0, '.', ','); ?>VND
 						</li>
-
+						
 					</ul>
 					<a href="index.php?act=checkout" class="btn_1 full-width cart">Tiến hành thanh toán </a>
 				</div>
