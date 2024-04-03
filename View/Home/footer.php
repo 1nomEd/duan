@@ -56,13 +56,13 @@
 					<div class="follow_us">
 						<h5>Theo dõi chúng tôi </h5>
 						<ul>
-							<li><a href="#0"><img
+							<li><a href="https://www.youtube.com"><img
 										src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-										data-src="View/img/twitter_icon.svg" alt="" class="lazy"></a></li>
-							<li><a href="#0"><img
+										data-src="View/img/ytb.png" alt="" class="lazy"></a></li>
+							<li><a href="https://www.facebook.com/profile.php?id=100030088785434"><img
 										src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
 										data-src="View/img/facebook_icon.svg" alt="" class="lazy"></a></li>
-							<li><a href="#0"><img
+							<li><a href="https://www.instagram.com/"><img
 										src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
 										data-src="View/img/instagram_icon.svg" alt="" class="lazy"></a></li>
 						
@@ -80,8 +80,6 @@
 						<div class="styled-select lang-selector">
 							<select>
 								<option value="English" selected>VietNam</option>
-								<option value="French">French</option>
-								<option value="Spanish">Spanish</option>
 								<option value="Russian">English</option>
 							</select>
 						</div>
@@ -94,8 +92,7 @@
 							</select>
 						</div>
 					</li>
-					<li><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-							data-src="View/img/cards_all.svg" alt="" width="198" height="30" class="lazy"></li>
+					
 				</ul>
 			</div>
 			<div class="col-lg-6">

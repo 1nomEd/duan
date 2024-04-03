@@ -84,7 +84,7 @@
                            <td>' . $category_name . '</td>
                            <td >
                                <a href="' . $suasp . '"><button class=" btn status completed">Sửa </button></a>
-                           <a href=" ' . $xoasp . '" onclick="return confirm(\'Bạn có chắc muốn xóa?\')"><button class="btn status pending">xóa</button></a>
+                           <a href=" ' . $xoasp . '" onclick="return confirm(\'Bạn có chắc muốn xóa?\')"><button class="btn status pending">Xóa</button></a>
                            </td>
                        </tr>'
                         ;

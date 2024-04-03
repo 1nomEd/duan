@@ -59,7 +59,7 @@
                             <td>
                                 <a onclick="return confirm('Bạn có chắc chắn muốn xóa khách hàng này không?')"
                                     href="index.php?act=deletekh&id_khachhang=<?= $khachhang['user_id'] ?>"><button
-                                        class="btn status pending">xóa</button></a>
+                                        class="btn status pending">Xóa</button></a>
                             </td>
                         </tr>
                         <?php

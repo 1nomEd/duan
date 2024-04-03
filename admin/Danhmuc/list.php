@@ -61,7 +61,7 @@
 
                             </td>
                             <td><a href=" <?= $delete ?>" onclick="return confirm('Bạn có chắc muốn xóa?')"><button
-                                        class="btn status pending">xóa</button></a>
+                                        class="btn status pending">Xóa</button></a>
                                 <!-- <a href="<?= $hide ?>"><button class=" btn status process">Ẩn</button></a> -->
                             </td>
                         </tr>
