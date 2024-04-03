@@ -10,7 +10,7 @@
                 <div class="box_contacts">
                     <i class="ti-support"></i>
                     <h2> Trung tâm hỗ trợ</h2>
-                    <a href="#0">+1900 9009</a> - <a href="#0">helpUnique@gmail.com</a>
+                    <a href="#0">+1900 9009</a> - <a href="#0">helpMAY@gmail.com</a>
                     <small>Thứ Hai đến Thứ Sáu 9am-6pm, Thứ Bảy 9am-2pm</small>
                 </div>
             </div>
@@ -26,7 +26,7 @@
                 <div class="box_contacts">
                     <i class="ti-package"></i>
                     <h2> Đơn đặt hàng</h2>
-                    <a href="#0">+1900 9009</a> - <a href="#0">orderUnique@gmail.com</a>
+                    <a href="#0">+1900 9009</a> - <a href="#0">orderMAY@gmail.com</a>
                     <small>Thứ Hai đến Thứ Sáu 9am-6pm, Thứ Bảy 9am-2pm</small>
                 </div>
             </div>

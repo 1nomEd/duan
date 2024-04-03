@@ -79,21 +79,16 @@
             <h5>Bài viết phổ biến</h5>
             <div class="list_articles add_bottom_15 clearfix">
                 <ul>
-                    <li><a href="#0"><i class="ti-file"></i><strong>Tài khoản</strong> - Et dicit vidisse epicurei
-                            pri</a></li>
-                    <li><a href="#0"><i class="ti-file"></i><strong>Tài khoản</strong> - Ad sit virtute rationibus
-                            efficiantur</a></li>
-                    <li><a href="#0"><i class="ti-file"></i><strong>Hoàn tiền</strong> - Partem vocibus omittam pri
-                            ne</a></li>
-                    <li><a href="#0"><i class="ti-file"></i><strong>Vận chuyển</strong> - Case debet appareat duo cu</a>
+                    <li><a href="#0"><i class="ti-file"></i><strong>Tài khoản</strong> </a></li>
+                    <li><a href="#0"><i class="ti-file"></i><strong>Tài khoản</strong></a></li>
+                    <li><a href="#0"><i class="ti-file"></i><strong>Hoàn tiền</strong> </a></li>
+                    <li><a href="#0"><i class="ti-file"></i><strong>Vận chuyển</strong> </a>
                     </li>
-                    <li><a href="#0"><i class="ti-file"></i><strong>Thanh toán</strong> - Impedit torquatos quo in</a>
+                    <li><a href="#0"><i class="ti-file"></i><strong>Thanh toán</strong> </a>
                     </li>
-                    <li><a href="#0"><i class="ti-file"></i><strong>Bảo hành</strong> - Nec omnis alienum no</a></li>
-                    <li><a href="#0"><i class="ti-file"></i><strong>Hoàn tiền</strong> - Quo eu soleat facilisi
-                            menandri</a></li>
-                    <li><a href="#0"><i class="ti-file"></i><strong>Đánh giá</strong> - Et dicit vidisse epicurei
-                            pri</a></li>
+                    <li><a href="#0"><i class="ti-file"></i><strong>Bảo hành</strong> </a></li>
+                    <li><a href="#0"><i class="ti-file"></i><strong>Hoàn tiền</strong> </a></li>
+                    <li><a href="#0"><i class="ti-file"></i><strong>Đánh giá</strong> </a></li>
                 </ul>
             </div>
             <!-- /list_articles -->
