@@ -135,7 +135,7 @@
 							<span>Tổng Tiền</span>
 							<?= number_format($tong, 0, '.', ','); ?>VND
 						</li>
-
+						
 					</ul>
 					<a href="index.php?act=checkout" class="btn_1 full-width cart">Tiến hành thanh toán </a>
 				</div>
