@@ -17,6 +17,12 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/listing.css">
 	<link rel="stylesheet" href="css/liststyle.css">
+	<link rel="shortcut icon" href="../View/img/logoo.png" type="image/x-icon">
+	<link rel="apple-touch-icon" type="image/x-icon" href="../img/logoo.png">
+	<link rel="apple-touch-icon" type="image/x-icon" sizes="90x90" href="View/img/logoo.png">
+	<link rel="apple-touch-icon" type="image/x-icon" sizes="114x114" href="View/img/logoo.png">
+	<link rel="apple-touch-icon" type="image/x-icon" sizes="144x144" href="img/logoo.png">
+
 
 	<title>M A Y</title>
 </head>

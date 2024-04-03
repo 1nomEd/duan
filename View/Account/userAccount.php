@@ -4,18 +4,18 @@
 		<div class="page_header">
 			<div class="breadcrumbs">
 				<ul>
-					<li><a href="#">Home</a></li>
-					<li><a href="#">Category</a></li>
-					<li>Page active</li>
+					<li><a href="#">Trang chủ</a></li>
+					
+					<li>Thông tin người dùng</li>
 				</ul>
 			</div>
-			<h1>User Information</h1>
+			<h1>Thông tin người dùng</h1>
 		</div>
 		<!-- /page_header -->
 		<div class="row justify-content-center">
 			<div class="col-xl-6 col-lg-6 col-md-8">
 				<div class="box_account">
-					<h3 class="new_client">Information</h3> <small class="float-right pt-2">* Required Fields</small>
+					<h3 class="new_client">Thông tin </h3> <small class="float-right pt-2">* Required Fields</small>
 					<form action="index.php?act=user" onsubmit="return sendDangky()" method="post">
 						<div class="form_container">
 							<div class="form-group">
